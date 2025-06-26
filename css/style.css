@@ -1,34 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: roboto;
+   
 }
-
 ul{
     list-style: none;
     display: flex;
-
 }
 ul li{
     padding: 10px;
     margin: 10px;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
 form{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 2px solid rgb(52, 145, 238);
+    border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(221, 61, 61, 0.722);
+    box-shadow: 0px 0px 10px #000;
 }
 form input{
     padding: 10px;
@@ -36,22 +31,18 @@ form input{
     border: none;
     outline: none;
     border-radius: 10px;
-}
+    }
 form button{
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 10px;
-    
 }
-
-
 .image{
     position: absolute;
-    top: calc( 50% - 150px);;
+    top: calc(50% - 150px);
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 .image img{
     width: 100%;
@@ -59,65 +50,58 @@ form button{
 }
 .search{
     position: absolute;
-    top: calc( 50% + 60px);;
-    left: 50%;
+    top: calc(50% + 60px);
+    left:50%;
     transform: translate(-50%,-50%);
 }
-.search ul li a:hover{
-    background-color: rgb(121, 211, 239);
+.search ul a:hover{
+    color: cornflowerblue;
     border-radius: 10px;
-    padding: 5px;
-    font-size: 20px;
 }
 .right{
     position: absolute;
-    right: 30px;
+    right: 60px;
     top: 30px;
 
 }
 .right ul a:hover{
     border-radius: 10px;
-    background-color: rgb(102, 247, 247);
+    background-color: rgb(207, 208, 229);
     padding: 10px;
-}
+    }
 .sign-in{
     padding: 5px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid #000;
     margin-top: -20px;
-}
-.menu{
-    border: none;
-    padding: 5px;
-    font-size: 20px;
-    margin-top: -20px;
-}
-@media screen and (max-width:1080px) {
-    form {
-        width: cal(100% - 30px);
+    }
+    .menu{
+        border: none;
+        padding: 5px;
+        font-size: 18px;
+        margin-top: -22px;
+        border-radius: 90px;
+    }
+@media screen and (max-width:580px){
+    form{
+        width:calc(100% - 220px);
     }
     form input{
-        width: calc(100% - 30px);
+        width:calc(100% - 38px);
     }
-    form button{
-        width: calc(100% - 400px);
-    }
-    
 }
-@media screen and (max-width:560px) {
+
+@media screen and (max-width:580px){
     form{
-        width: cal(100% - 30px);
+        width:calc(100% - 30px);
     }
     .search ul{
-        display:block;
+        display: block;
     }
-    
 }
-@media screen and (max-width:480px) {
 
+@media screen and (max-width: 480px){
     .right ul li a{
-        display:none;
-
+        display:none
     }
-    
 }
